@@ -7,7 +7,7 @@ import Travelo from "../images/travelo.png";
 import Bot from "../images/bot.png";
 import Chatter from "../images/chatter.png";
 
-export const Projects = [
+const Projects = [
   {
     title: "MovieFlix 🎥",
     description:
@@ -49,7 +49,7 @@ export const Projects = [
     imageLink: "../images/bot.png",
   },
 ];
-export const Education = [
+const Education = [
   {
     university: "University of Glasgow, Scotland",
     time: "2022 - 2023",
@@ -69,7 +69,7 @@ export const Education = [
     grade: "87.4%",
   },
 ];
-export const Experience = [
+const Experience = [
   {
     company: "Adobe",
     time: "Feb 2022 - Aug 2022",
@@ -87,7 +87,7 @@ export const Experience = [
   {
     company: "Viga Entertainment Studio",
     time: "Jul 2020 - Dec 2020",
-    role: "Frontend Developer Intern",
+    role: "Frontend Intern",
     description:
       "Developed a React web app to serve as a repository for tracking sequences and shots in movie production. The application hosted media files and enabled interaction between a director and a production team. Additionally, developed a Single-Sign-On and user management portal. UI/UX Design of 15+ screens – converted low-fidelity designs into mobile responsive web pages. Communicated with stakeholders extensively to understand problems and build user-friendly solutions.",
   },
@@ -413,7 +413,7 @@ function Home() {
     </div>
   );
 }
-export const Head = () => (
+const Head = () => (
   <>
     <title>Portfolio 💼</title>;
     <link
