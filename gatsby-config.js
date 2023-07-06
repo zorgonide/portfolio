@@ -3,8 +3,8 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `New Portfolio`,
-    siteUrl: `https://www.yourdomain.tld`,
+    title: `Portfolio`,
+    siteUrl: `https://www.ammarkhurshid.com/`,
   },
   plugins: ["gatsby-plugin-sass", "gatsby-plugin-image", "gatsby-plugin-sharp"],
 };

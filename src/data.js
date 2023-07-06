@@ -1,8 +1,8 @@
-import MovieFlix from "../images/movieflix.png";
-import Emokey from "../images/emokey.png";
-import Travelo from "../images/travelo.png";
-import Bot from "../images/bot.png";
-import Chatter from "../images/chatter.png";
+import MovieFlix from "./images/movieflix.png";
+import Emokey from "./images/emokey.png";
+import Travelo from "./images/travelo.png";
+import Bot from "./images/bot.png";
+import Chatter from "./images/chatter.png";
 
 export const Projects = [
   {
