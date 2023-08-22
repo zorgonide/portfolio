@@ -75,21 +75,23 @@ const Experience = [
     time: "Feb 2022 - Aug 2022",
     role: "Senior Technical Product Consultant",
     description:
-      "Facilitated clients in implementing, optimising, and troubleshooting web implementations for Adobe Analytics and Adobe Launch. Analysis of data extracted from Adobe Analytics to gain insights into customer spending behaviour and resolve outliers in reporting.",
+      "Facilitated clients in implementing, optimising, and troubleshooting web implementations for Adobe Analytics.",
+    tech: "Javascript, HTML, CSS, SQL, Adobe Analytics",
   },
   {
     company: "ICICI Lombard",
     time: "Feb 2021 - Feb 2022",
     role: "Developer",
-    description:
-      "Developed Angular web apps with 50+ fields for data management and entry of 100,000+ clients. These apps issued and renewed health insurance policies. Worked on UI/UX Design for 10+ screens – intending to minimise data entry. Rebuilt an Ionic application using Angular to improve page load time, mobile responsiveness and reduce API usage.",
+    description: "Developed Angular web apps for health insurance for India's largest private insurer.",
+    tech: "Angular, Typescript, HTML, CSS, Java, React",
   },
   {
     company: "Viga Entertainment Studio",
     time: "Jul 2020 - Dec 2020",
     role: "Frontend Intern",
     description:
-      "Developed a React web app to serve as a repository for tracking sequences and shots in movie production. The application hosted media files and enabled interaction between a director and a production team. Additionally, developed a Single-Sign-On and user management portal. UI/UX Design of 15+ screens – converted low-fidelity designs into mobile responsive web pages. Communicated with stakeholders extensively to understand problems and build user-friendly solutions.",
+      "Developed a React web app to serve as a repository for tracking sequences and shots in movie production.",
+    tech: "  React, Redux, HTML, CSS, Javascript, Firebase, UI/UX Design",
   },
 ];
 function Project(props) {
@@ -120,6 +122,7 @@ function Experiences() {
               <div className="title">{experience.role}</div>
               <div className="company">{experience.company}</div>
               <div className="descr">{experience.description}</div>
+		<div className="tech text-muted">{experience.tech}</div>
             </li>
           );
         })}
@@ -237,7 +240,7 @@ function Home() {
                 height="200"
               />
               <p style={{ textAlign: "left" }}>
-                Hi, I'm <b>Ammar</b> :D
+                Hi, I'm <b>Ammar</b> 👨🏻‍💻
                 <br />
                 I'm an MSc Computing Science graduate from the{" "}
                 <a href="https://www.gla.ac.uk/">University of Glasgow</a>
