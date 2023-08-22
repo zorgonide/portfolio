@@ -11,7 +11,7 @@ const Projects = [
   {
     title: "MovieFlix 🎥",
     description:
-      "Built out of a need to stop endless scrolling through Netflix.Login and get customized movie recommendations, and leave reviews.",
+      "Built out of a need to stop endless scrolling through Netflix. Log in and get customized movie recommendations, and leave reviews.",
     image: MovieFlix,
     link: "https://movieflix-tv.netlify.app/",
     imageLink: "../images/movieflix.png",
@@ -239,13 +239,13 @@ function Home() {
               <p style={{ textAlign: "left" }}>
                 Hi, I'm <b>Ammar</b> :D
                 <br />
-                I'm an MSc Computing Science student at the{" "}
+                I'm an MSc Computing Science graduate from the{" "}
                 <a href="https://www.gla.ac.uk/">University of Glasgow</a>
                 <i className="fa fa-graduation-cap" aria-hidden="true"></i>.
                 <br />
                 <code>
-                  A frontend web developer by profession with a proficiency in
-                  ReactJs.
+                  A frontend web developer by profession with proficiency in
+                  ReactJs ❤.
                 </code>
                 <br />
                 <br />
