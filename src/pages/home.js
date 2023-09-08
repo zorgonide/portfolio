@@ -32,14 +32,14 @@ const Projects = [
     link: "https://emokey2.netlify.app/",
     imageLink: "../images/emokey.png",
   },
-  {
-    title: "Chat application using React 🗣",
-    description:
-      "This is a chat application that works on localhost, where a user can sign up/ log in and chat with another user. It uses web sockets to establish and maintain connections between users, and uses redux to manage application state.",
-    image: Chatter,
-    link: "https://github.com/zorgonide/Chatter",
-    imageLink: "../images/chatter.png",
-  },
+  // {
+  //   title: "Chat application using React 🗣",
+  //   description:
+  //     "This is a chat application that works on localhost, where a user can sign up/ log in and chat with another user. It uses web sockets to establish and maintain connections between users, and uses redux to manage application state.",
+  //   image: Chatter,
+  //   link: "https://github.com/zorgonide/Chatter",
+  //   imageLink: "../images/chatter.png",
+  // },
   {
     title: "Semi-autonomous four-wheeled bot 🏎",
     description:
@@ -70,6 +70,14 @@ const Education = [
   },
 ];
 const Experience = [
+{
+    company: "Reply",
+    time: "Sep 2023 - Present",
+    role: "Consultant",
+    description:
+      "Analytics Developer working with Adobe Experience Cloud",
+    tech: "Javascript, HTML, CSS, Adobe Analytics",
+  },	
   {
     company: "Adobe",
     time: "Feb 2022 - Aug 2022",
