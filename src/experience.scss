@@ -15,9 +15,11 @@ $line-hg-mob-meta: 1.5 * 1rem; // 24px // meta
 }
 @mixin paragraph {
     font-weight: 300;
-    text-align: justify;
+    text-align: center;
     @include medium-screen {
         font-size: $font-size-base;
+        text-align: left;
+
         // line-height: $line-hg-mob-meta;
     }
 }
