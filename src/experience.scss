@@ -14,13 +14,9 @@ $line-hg-mob-meta: 1.5 * 1rem; // 24px // meta
     }
 }
 @mixin paragraph {
-    // font-family: $font-family-body;
-    // font-size: clamp($font-size-base, 1rem, $font-size-body);
-    // line-height: clamp($line-height-base, 8.6vw, $line-height-body);
     font-weight: 300;
+    text-align: justify;
     @include medium-screen {
-        text-align: left;
-
         font-size: $font-size-base;
         // line-height: $line-hg-mob-meta;
     }
@@ -41,6 +37,9 @@ $line-hg-mob-meta: 1.5 * 1rem; // 24px // meta
         list-style: none;
         width: min(60rem, 90%);
         margin-inline: auto;
+        @include medium-screen() {
+            width: 100%;
+        }
     }
 
     /* line */
