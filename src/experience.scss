@@ -130,6 +130,7 @@ $line-hg-mob-meta: 1.5 * 1rem; // 24px // meta
     }
     ul li .descr {
         @include paragraph;
+        text-align: center;
         padding: 0;
     }
 
