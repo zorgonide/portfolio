@@ -51,7 +51,7 @@ export const Education = [
     university: "University of Glasgow, Scotland",
     time: "2022 - 2023",
     degree: "MSc Computing Science",
-    grade: "Ongoing, on track for distinction",
+    grade: "Distinction",
   },
   {
     university: "Manipal Institute of Technology, India",
