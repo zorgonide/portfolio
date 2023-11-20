@@ -414,7 +414,7 @@ function Home() {
                         />
                         <ReCAPTCHA
                             ref={recaptcha}
-                            sitekey={process.env.SITE_KEY}
+                            sitekey={'6LfKJhUpAAAAAC91p3Iv45bDilAm0BdM1X9NHxq6'}
                         />
                         <button type='submit'>Send</button>
                     </form>
