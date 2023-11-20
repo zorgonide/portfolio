@@ -413,6 +413,7 @@ function Home() {
                             required
                         />
                         <ReCAPTCHA
+                            className='captcha'
                             ref={recaptcha}
                             sitekey={'6LfKJhUpAAAAAC91p3Iv45bDilAm0BdM1X9NHxq6'}
                         />
