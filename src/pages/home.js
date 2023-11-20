@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import Ammar from '../images/ammar.jpg';
 import Resume from '../static/Ammar_Resume.pdf';
 import MovieFlix from '../images/movieflix.png';
@@ -160,36 +160,25 @@ function Home() {
     const handleMenuOpen = () => {
         setMenuActive(!isMenuActive);
     };
-
+    const recaptcha = useRef();
     const handleMenuClose = () => {
         setMenuActive(!isMenuActive);
     };
     const handleSubmission = (e) => {
         e.preventDefault();
-        // handle form submission with recaptcha
         const formData = new FormData(e.target);
-
-        // grecaptcha.ready(function () {
-        //     // do request for recaptcha token
-        //     // response is promise with passed token
-        //     grecaptcha
-        //         .execute('6LcBIhUpAAAAAGbi0JTktDVpJoyqF2u2jIBQVPoB', {
-        //             action: 'contact',
-        //         })
-        //         .then(function (token) {
-        //             // add token to form
-        //             formData.append('g-recaptcha-response', token);
-        //             fetch(
-        //                 'https://getform.io/f/73ebbb0e-851d-4921-ae48-e8f5b4b64f56',
-        //                 {
-        //                     method: 'POST',
-        //                     body: formData,
-        //                 }
-        //             )
-        //                 .then((response) => console.log(response))
-        //                 .catch((error) => console.log(error));
-        //         });
-        // });
+        const captchaValue = recaptcha.current.getValue();
+        if (captchaValue) {
+            fetch('https://getform.io/f/73ebbb0e-851d-4921-ae48-e8f5b4b64f56', {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    Accept: 'application/json',
+                },
+            })
+                .then((response) => console.log(response))
+                .catch((error) => console.log(error));
+        }
     };
     useEffect(() => {
         const d = new Date();
@@ -423,7 +412,10 @@ function Home() {
                             placeholder='Your message'
                             required
                         />
-                        <ReCAPTCHA sitekey='6LewHRUpAAAAAOtvmFgNMc1oM68t4MCpNQE2QKUq' />
+                        <ReCAPTCHA
+                            ref={recaptcha}
+                            sitekey={process.env.SITE_KEY}
+                        />
                         <button type='submit'>Send</button>
                     </form>
                 </div>
