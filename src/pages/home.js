@@ -176,7 +176,21 @@ function Home() {
                     Accept: 'application/json',
                 },
             })
-                .then((response) => console.log(response))
+                .then(() => {
+                    let form = document.getElementById('form');
+                    Array.from(form.elements).forEach((element) => {
+                        // Check if the element is an input, textarea, or select
+                        if (
+                            ['input', 'textarea', 'select'].includes(
+                                element.tagName.toLowerCase()
+                            )
+                        ) {
+                            // Clear the value
+                            element.value = '';
+                        }
+                    });
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                })
                 .catch((error) => console.log(error));
         }
     };
