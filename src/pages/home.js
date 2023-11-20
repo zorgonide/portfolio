@@ -198,6 +198,7 @@ function Home() {
         const d = new Date();
         let year = d.getFullYear();
         setCopyright(`${year} Ammar Khurshid`);
+        console.log(process.env.SITE_KEY);
     }, []);
 
     return (
