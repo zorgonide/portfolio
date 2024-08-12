@@ -410,6 +410,7 @@ function Home() {
                         id='form'
                         method='POST'
                         onSubmit={(e) => handleSubmission(e)}
+                        netlify
                     >
                         <input
                             type='hidden'
