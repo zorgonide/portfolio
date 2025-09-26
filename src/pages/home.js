@@ -109,7 +109,7 @@ function Project(props) {
   return (
     <div className='project shadow-large'>
       <div className='project-image'>
-        <img src={image} height='180px' width='300px' />
+        <img src={image} alt={title} height='180px' width='300px' />
       </div>
       <div className='project-info'>
         <h3>{title}</h3>
