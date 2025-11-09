@@ -11,7 +11,7 @@ const Projects = [
     title: 'MovieFlix 🎥',
     description: 'Built out of a need to stop endless scrolling through Netflix. Log in and get customized movie recommendations, and leave reviews.',
     image: MovieFlix,
-    link: 'https://movieflix-tv.netlify.app/',
+    link: 'https://movieflix-next-delta.vercel.app/',
     imageLink: '../images/movieflix.png',
   },
   {
