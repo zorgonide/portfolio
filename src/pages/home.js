@@ -271,10 +271,6 @@ function Home() {
               <p style={{ textAlign: 'left' }}>
                 Hi, I'm <b>Ammar</b> 
                 <br />
-                I'm an MSc Computing Science graduate from the <a href="https://www.gla.ac.uk/">University of Glasgow</a>
-                <i className='fa fa-graduation-cap' aria-hidden='true'></i>
-                .
-                <br />
                 <code>A nerd 👨🏻‍💻.</code>
                 <br />
                 Hit me up for anything and everything tech-related, or if you want to see me talk about why Samwise Gamgee is the real hero, not Frodo Baggins.
