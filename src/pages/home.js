@@ -269,16 +269,15 @@ function Home() {
                 height='200'
               />
               <p style={{ textAlign: 'left' }}>
-                Hi, I'm <b>Ammar</b> 👨🏻‍💻
+                Hi, I'm <b>Ammar</b> 
                 <br />
-                I'm an MSc Computing Science graduate from the <a href='https://www.gla.ac.uk/'>University of Glasgow</a>
+                I'm an MSc Computing Science graduate from the <a href="https://www.gla.ac.uk/">University of Glasgow</a>
                 <i className='fa fa-graduation-cap' aria-hidden='true'></i>
                 .
                 <br />
-                <code>A frontend web developer by profession with proficiency in ReactJs ❤.</code>
+                <code>A nerd 👨🏻‍💻.</code>
                 <br />
-                <br />
-                Hit me up for anything and everything tech related, or if you want to see me talk about why Samwise Gamgee is the real hero, not Frodo Baggins.
+                Hit me up for anything and everything tech-related, or if you want to see me talk about why Samwise Gamgee is the real hero, not Frodo Baggins.
               </p>
             </div>
           </div>
